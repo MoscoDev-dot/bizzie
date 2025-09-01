@@ -4,13 +4,10 @@ import BlackButton from "./BlackButton";
 import Link from "next/link";
 
 import Image from "next/image";
-import { Poppins } from "next/font/google";
+
 import NavImage from "./NavImage";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "500", "700"],
-});
+
 
 const Footer = () => {
   return (

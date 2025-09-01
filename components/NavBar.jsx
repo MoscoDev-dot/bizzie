@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import NavImage from "./NavImage";
 import NavLinks from "./NavLinks";
 import NavButton from "./NavButton";
-
 import Link from "next/link";
 import { motion } from "motion/react";
 import BlackButton from "./BlackButton";
