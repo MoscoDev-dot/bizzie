@@ -18,7 +18,7 @@ const NavBar = () => {
         //  animate={{ y: 0, opacity: 1 }}
         //  transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
          // viewport={{ once: true }}
-         // className="flex items-center justify-between px-6 py-4"
+          className="flex items-center justify-between px-6 py-4"
         >
           <NavImage />
           {/* Hamburger Icon */}
