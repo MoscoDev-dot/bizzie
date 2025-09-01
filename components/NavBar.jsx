@@ -5,7 +5,6 @@ import NavImage from "./NavImage";
 import NavLinks from "./NavLinks";
 import NavButton from "./NavButton";
 import Link from "next/link";
-import { motion } from "motion/react";
 import BlackButton from "./BlackButton";
 
 const NavBar = () => {
@@ -14,12 +13,12 @@ const NavBar = () => {
   return (
     <>
       <nav className="w-full  bg-white lg:px-5  ">
-        <motion.div
-          initial={{ y: -25, opacity: 0 }} //ANNIMATIONS
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="flex items-center justify-between px-6 py-4"
+        <div
+         // initial={{ y: -25, opacity: 0 }} //ANNIMATIONS
+        //  animate={{ y: 0, opacity: 1 }}
+        //  transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+         // viewport={{ once: true }}
+         // className="flex items-center justify-between px-6 py-4"
         >
           <NavImage />
           {/* Hamburger Icon */}
@@ -51,7 +50,7 @@ const NavBar = () => {
             <NavButton link={'#'} text={'Login'} />
            
           </div>
-        </motion.div>
+        </div>
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="lg:hidden px-6 pb-4">
