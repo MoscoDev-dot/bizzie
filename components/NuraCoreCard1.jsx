@@ -2,11 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "motion/react";
 
 
 const NuraCoreCard1 = ({text1, text2}) => {
   return (
-    <div  className="pb-10">
+    <motion.div transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}  className="pb-10">
       <div className="text-[#0A0A0A] mx-auto mb-5 font-semibold text-[12px] mt-15 w-fit px-5 py-1 rounded-lg text-center bg-[#FFFFFF] leading-[100%] ">
         Today
       </div>
@@ -27,14 +31,14 @@ const NuraCoreCard1 = ({text1, text2}) => {
         </Link>
       </div>
       <div className="mx-5">
-        <p className="font-bold text-[#386EAF] pt-3 md:text-[24px] text-[15px] leading-[120%] ">
+        <p className="font-bold text-[#25D363] pt-3 md:text-[24px] text-[15px] leading-[120%] ">
           {text1}
         </p>
         <p className="text-[#000000] py-4 md:text-[16px] text-[12px] font-medium leading-[150%] ">
            {text2}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

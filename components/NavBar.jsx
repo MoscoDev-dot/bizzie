@@ -49,7 +49,7 @@ const NavBar = () => {
             <NavLinks />
           </div>
           <div className="hidden lg:flex gap-4 ml-auto">
-             <BlackButton link={'#'} text={' Start on whatsapp'} />
+             <BlackButton link={'https://wa.me/12193552916'} target={"_blank"} text={' Start on whatsapp'} />
             <NavButton link={'#'} text={'Login'} />
            
           </div>

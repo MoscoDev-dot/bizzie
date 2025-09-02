@@ -37,7 +37,7 @@ const Contact = () => {
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }} >
-            <BlackButton link={'#'} text={"Explore on web"} />
+            <BlackButton link={'https://wa.me/12193552916'} target={"_blank"}text={"Explore on web"} />
           </motion.div>
         </div>
       </div>

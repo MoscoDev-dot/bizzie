@@ -8,7 +8,7 @@ const NuraWorksCard = ({image, text1, text2, bg, text_colo}) => {
         <Image
           src={image}
           alt="pix-1"
-          width={40}
+          width={50}
           height={20}
           className={`md:mt-30 mt-10 md:mb-10 mb-5 text-white  ${bg} p-2 rounded-full `}
         />

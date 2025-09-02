@@ -1,13 +1,18 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 
 const NuraCoreCard2 = ({text1, text2}) => {
   return (
-    <div  className="pb-10">
+    <motion.div transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}  className="pb-10">
       <div className="mx-5">
-        <p className="font-bold text-[#386EAF] pt-10 md:text-[24px] text-[15px] leading-[120%] ">
+        <p className="font-bold text-[#25D363] pt-10 md:text-[24px] text-[15px] leading-[120%] ">
            {text1}
         </p>
         <p className="text-[#000000] py-4 md:text-[16px] text-[12px] font-medium leading-[150%] ">
@@ -34,7 +39,7 @@ const NuraCoreCard2 = ({text1, text2}) => {
           </p>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

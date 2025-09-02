@@ -37,7 +37,7 @@ const Footer = () => {
                     placeholder="johndoe@gmail.com"
                     className="p-2  rounded-lg border border-[#E5E5E5] text-[#222222]"
                   />
-                  <BlackButton link={'#'} text={"subscribe"} />
+                  <BlackButton link={'https://wa.me/12193552916'} target={"_blank"} text={"subscribe"} />
                 </div>
                 <p   className="text-[#ABABAB] text-[12px] leading-[150%] font-medium ">
                   By clicking, you’re agreeing to our Terms.

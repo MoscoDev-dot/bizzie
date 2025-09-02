@@ -45,7 +45,7 @@ const Hero = () => {
               </div>
               <div className="flex my-3 lg:gap-5 md:gap-2 gap-5">
                 <div  >
-                  <BlackButton link={'#'} text={"Start on Whatsapp"} />
+                  <BlackButton link={'https://wa.me/12193552916'} target={"_blank"} text={"Start on Whatsapp"} />
                 </div>
                 <div   >
                   {" "}

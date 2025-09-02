@@ -23,7 +23,7 @@ const NuraWorks = () => {
               <NuraWorksCard
               bg={'bg-[#386EAF]'}
               text_colo={'text-[#386EAF]'}
-                image={"/Vector (5).png"}
+                image={"/icon 1.svg"}
                 text1={"Chat with Bizie on WhatsApp"}
                 text2={
                   " Simply send us a message and our smart business assistant will instantly respond."
@@ -38,7 +38,7 @@ const NuraWorks = () => {
               <NuraWorksCard
                 bg={'bg-[#CC8A00]'}
               text_colo={'text-[#CC8A00]'}
-                image={"/Vector (8).png"}
+                image={"/icon 2.svg"}
                 text1={"Get What You Need Super Fast"}
                 text2={
                   " Bizzie instantly delivers templates, forms, expert advice, and trusted service connections."
@@ -53,7 +53,7 @@ const NuraWorks = () => {
               <NuraWorksCard
                 bg={'bg-[#636060]'}
               text_colo={'text-[#636060]'}
-                image={"/Vector (9).png"}
+                image={"/icon 3.svg"}
                 text1={"Grow Your Business"}
                 text2={
                   " Bizzie helps you find opportunities, connect with trusted providers, and grow your business."
@@ -68,7 +68,7 @@ const NuraWorks = () => {
               <NuraWorksCard
                 bg={'bg-[#25D363]'}
               text_colo={'text-[#25D363]'}
-                image={"/Vector (10).png"}
+                image={"/icon 4.svg"}
                 text1={"Access Bizzie from Web or WhatsApp"}
                 text2={
                   " Whether you prefer WhatsApp or our powerful web app, Bizzie gives you full control."

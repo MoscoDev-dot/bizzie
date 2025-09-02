@@ -9,27 +9,27 @@ import { motion } from "motion/react"
 const faqs = [
   {
     question: "How do i start using Bizzie?",
-    answer: "Ask Bizzie"
+    answer: " Just click “Start Chatting” on our website or message us directly on WhatsApp. No downloads, no setup you can get your first answer or document within minutes."
         },
   {
     question: "What is Bizzie?",
-    answer:"Ask  Bizzie"  
+    answer:" Bizzie is your AI-powered business assistant available on WhatsApp and Web. It helps you get business documents, expert services, funding opportunities, and market connections instantly. Think of it as a virtual business partner in your pocket."  
     },
   {
     question: "Is Bizzie available only in Nigeria?",
-    answer: "Ask Bizzie",
+    answer: "Currently, we are focused on Nigerian businesses to ensure accurate opportunities, pricing, and compliance with local regulations. Expansion to other regions is in progress.",
   },
   {
-    question: "How does Bizzie expert hiring work?",
-    answer: "Ask Bizzie",
+    question: "How does Bizzie's expert hiring work?",
+    answer: "When you request help (branding, legal, IT, HR, etc.), Bizzie connects you with pre-vetted, reliable service providers. You get quotes, review ratings, and hire right from WhatsApp or the dashboard.",
   },
   {
-    question: "What are Bizzie Opportunities?",
-    answer:"Ask Bizzie",
+    question: "What are Bizzie's Opportunities?",
+    answer:" A curated feed of grants, funding, competitions, and events relevant to Nigerian entrepreneurs updated daily so you never miss out.",
   },
   {
     question: "How do i contact support?",
-    answer: "Ask Bizzie",
+    answer: "You can chat with Bizzie Support directly on WhatsApp or use the “Help & Support” section in your web dashboard.",
   },
   {
     question: "What if i needed a custom document or service not listed?",
@@ -56,7 +56,7 @@ const Faq = () => {
             frequently asked question
           </div>
         </motion.div>
-        <hr className="text-[#000000] mx-5 py-2" />
+        
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
@@ -69,7 +69,7 @@ const Faq = () => {
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }} className="flex justify-between items-center">
-                <h3 className="font-bold text-[12px] md:text-[24px]">{faq.question}</h3>
+                <h3 className="font-bold text-[14px] md:text-[24px]">{faq.question}</h3>
                 {openIndex === index ? (
                   <ExpandLessIcon className="w-5 h-5 bg-[#000000] rounded-full  p-1 text-[#FFFFFF]" />
                 ) : (
@@ -77,7 +77,7 @@ const Faq = () => {
                 )}
               </motion.div>
               {openIndex === index && (
-                <p className="mt-2 text-gray-500 text-sm">{faq.answer}</p>
+                <p className="mt-2 text-gray-500 md:text-[15px] text-[12px] ">{faq.answer}</p>
               )}
                <hr className="text-[#000000] mt-5" />
             </div>

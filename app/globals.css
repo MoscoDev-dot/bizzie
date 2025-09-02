@@ -16,11 +16,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/Content.png');
+  background-image: url('/down Background pattern decorative.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 70%;
-  filter: blur(5px);
+  background-size: cover;
+  filter: blur(0px);
   z-index: 0;
 }
 
@@ -38,11 +38,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/Content.png');
+  background-image: url('/Background pattern decorative.svg');
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 50%;
-  filter: blur(10px);
+  background-size: cover;
+  filter: blur(0px);
   z-index: 0;
 }
 
