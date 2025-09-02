@@ -35,10 +35,10 @@ const Hero = () => {
                 </div>
               </div>
               <div>
-                <p   className="font-bold lg:text-[64px] md:text-[40px] text-[30px] leading-[120%] text-[#000000] ">
+                <p   className="font-bold lg:text-[64px] md:text-[40px] text-[24px] leading-[120%] text-[#000000] ">
                   Entrepreneurship Made Easy; <span className="text-[#25D363]">One Chat,</span> All the Help You Need
                 </p>
-                <p   className="font-medium lg:text-[24px] md:text-[18px] py-3 text-[15px] leading-[120%] ">
+                <p   className="font-medium lg:text-[24px] md:text-[18px] py-3 text-[13px] leading-[120%] ">
                   Get instant access to business documents, expert support,
                   opportunities, and more all from your favorite chat app.
                 </p>
