@@ -4,6 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { Container } from "@mui/material";
 import Contact from "./Contact";
+import { motion } from "motion/react"
 
 const faqs = [
   {
@@ -47,11 +48,14 @@ const Faq = () => {
   return (
     <div className="bg-[#EDEDED] lg:px-10 pb-15 pt-20">
       <Container maxWidth={false}>
-        <div>
+        <motion.div  transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }} >
           <div className="capitalize font-bold pb-8 lg:text-[48px] md:text-[30px] text-[15px] text-[#25D363] text-center leading-[120%] ">
             frequently asked question
           </div>
-        </div>
+        </motion.div>
         <hr className="text-[#000000] mx-5 py-2" />
 
         <div className="space-y-4">
@@ -61,14 +65,17 @@ const Faq = () => {
               className=" rounded-xl  px-4  cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
-              <div className="flex justify-between items-center">
+              <motion.div  transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }} className="flex justify-between items-center">
                 <h3 className="font-bold text-[12px] md:text-[24px]">{faq.question}</h3>
                 {openIndex === index ? (
                   <ExpandLessIcon className="w-5 h-5 bg-[#000000] rounded-full  p-1 text-[#FFFFFF]" />
                 ) : (
                   <ExpandMoreIcon className="w-5 h-5 bg-[#000000] rounded-full p-1 text-[#FFFFFF]" />
                 )}
-              </div>
+              </motion.div>
               {openIndex === index && (
                 <p className="mt-2 text-gray-500 text-sm">{faq.answer}</p>
               )}

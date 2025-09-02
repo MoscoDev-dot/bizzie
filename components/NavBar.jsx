@@ -6,18 +6,21 @@ import NavLinks from "./NavLinks";
 import NavButton from "./NavButton";
 import Link from "next/link";
 import BlackButton from "./BlackButton";
+import { motion } from "motion/react"
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <nav className="w-full  bg-white lg:px-5  ">
+      <motion.nav 
+        initial={{ y: -25, opacity: 0 }} //ANNIMATIONS
+         animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+      className="w-full  bg-white lg:px-5  ">
         <div
-         // initial={{ y: -25, opacity: 0 }} //ANNIMATIONS
-        //  animate={{ y: 0, opacity: 1 }}
-        //  transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-         // viewport={{ once: true }}
+        
           className="flex items-center justify-between px-6 py-4"
         >
           <NavImage />
@@ -87,7 +90,7 @@ const NavBar = () => {
             </div>
           </div>
         )}
-      </nav>
+      </motion.nav>
     </>
   );
 };
