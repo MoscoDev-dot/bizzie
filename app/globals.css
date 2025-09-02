@@ -51,4 +51,27 @@
   z-index: 1; /* keep text above blurred background */
 }
 
+.blurry-background {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔹 Blur Layer */
+.blurry-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(255, 255, 255); /* transparent overlay (#130C3E1C) */
+  backdrop-filter: blur(8px); /* adjust blur strength */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  z-index: 0;
+}
+
+/* 🔹 Content stays sharp */
+.blurry-background > * {
+  position: relative;
+  z-index: 1;
+}
+
+
 

@@ -23,7 +23,7 @@ const NuraCoreCard2 = ({text1, text2}) => {
       <div className="text-[#0A0A0A] mx-auto mb-5 font-semibold text-[12px] mt-15 w-fit px-5 py-1 rounded-lg text-center bg-[#FFFFFF] leading-[100%] ">
         Today
       </div>
-      <div className="bg-[#FEEECD] rounded-[20px] mx-auto   md:w-75 w-50  mb-15 p-3">
+      <div className="bg-[#FEEECD] rounded-[20px] mx-auto   md:w-60 w-50  mb-15 p-3">
         <div className="flex ">
           <span>
             <Image src="/ico-12-lock.png" alt="" width={30} height={20} />
