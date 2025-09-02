@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 const NuraWorks = () => {
   return (
-    <div className="bg-[#EDEDED] lg:px-5 pt-30">
+    <div id="about" className="bg-[#EDEDED] lg:px-5 pt-30">
       <Container maxWidth={false}>
         <div>
           <motion.div  transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}

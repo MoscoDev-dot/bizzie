@@ -1,10 +1,12 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+
 const NuraCoreCard1 = ({text1, text2}) => {
   return (
-    <div className="pb-10">
+    <div  className="pb-10">
       <div className="text-[#0A0A0A] mx-auto mb-5 font-semibold text-[12px] mt-15 w-fit px-5 py-1 rounded-lg text-center bg-[#FFFFFF] leading-[100%] ">
         Today
       </div>

@@ -2,9 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+
 const NuraCoreCard2 = ({text1, text2}) => {
   return (
-    <div className="pb-10">
+    <div  className="pb-10">
       <div className="mx-5">
         <p className="font-bold text-[#386EAF] pt-10 md:text-[24px] text-[15px] leading-[120%] ">
            {text1}

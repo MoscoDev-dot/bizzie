@@ -46,7 +46,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-[#EDEDED] lg:px-10 pb-15 pt-20">
+    <div id="faq" className="bg-[#EDEDED] lg:px-10 pb-15 pt-20">
       <Container maxWidth={false}>
         <motion.div  transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
