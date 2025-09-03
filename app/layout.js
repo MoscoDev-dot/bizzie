@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Bizzie",
   description: "Bizzie Web App",
-  icons: {
-    icon: "/IMG_1245.png"
-  }
+  // icons: {
+  //   icon: "/IMG_1245.png"
+  // }
 };
 
 export default function RootLayout({ children }) {

@@ -4,8 +4,8 @@ import React from "react";
 
 const NavImage = () => {
   return (
-    <div>
-      <Link href="#nav">
+    <div >
+      <Link href="#">
         <Image
           src="/IMG_1245.png"
           alt=""
