@@ -8,7 +8,7 @@ import { motion } from "motion/react"
 
 const Hero = () => {
   return (
-    <div className="bg-[#FFFFFF] hero-bg lg:pt-30 md:pt-20 lg:px-5 pt-15">
+    <div id="" className="bg-[#FFFFFF] hero-bg lg:pt-30 md:pt-20 lg:px-5 pt-15">
       <Container maxWidth={false}>
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4 lg:gap-0">
@@ -55,7 +55,7 @@ const Hero = () => {
             </motion.div>
 
             {/* 2nd col */}
-            <motion.div  transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
+            <motion.div  transition={{ duration: 0.5, delay: 0.6, ease: "easeInOut" }}
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }} className="mt-0 md:mt-22 lg:mt-0 ">

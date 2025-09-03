@@ -24,9 +24,9 @@ const NuraCore = () => {
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mx-20 lg:gap-0 gap-4"
+            className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 lg:mx-20 lg:gap-0 gap-4"
           >
-            <div className="lg:col-span-2 lg:mx-10 rounded-[20px] bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
+            <div className="lg:col-span-2  lg:mx-10 rounded-[20px] bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
               <NuraCoreCard1
                 text1={" Ready Made Business Docs, Done for You"}
                 text2={
@@ -51,7 +51,7 @@ const NuraCore = () => {
                 }
               />
             </div>
-            <div className="lg:col-span-2 lg:mt-10 lg:ms-10 lg:mx-10 rounded-[20px]  bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
+            <div className="lg:col-span-2 lg:mt-10  lg:ms-10 rounded-[20px]  bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
               <NuraCoreCard2
                 text1={"Opportunities That Find You"}
                 text2={

@@ -12,7 +12,7 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className=" ">
+    <div id="nav" className=" ">
       <motion.nav 
         initial={{ y: -25, opacity: 0 }} //ANNIMATIONS
          animate={{ y: 0, opacity: 1 }}

@@ -14,20 +14,17 @@ import { motion } from "motion/react"
 
 const Footer = () => {
   return (
-    <div className="bg-white lg:px-5">
+    <div className="bg-white  lg:px-5">
       <Container maxWidth={false}>
-        <div>
-          <div className="grid md:grid-cols-2 py-15 grid-cols-1 lg:gap-5 md:gap-0 gap-15 ">
-            <motion.div  transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
+        <motion.div  transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>
+          <div className="grid md:grid-cols-2 pb-5 pt-10 grid-cols-1 lg:gap-5 md:gap-0 gap-15 ">
+            <div   >
               <NavImage />
-            </motion.div>
-            <motion.div transition={{ duration: 0.5, delay: 0.6, ease: "easeInOut" }}
-            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }} className="lg:ml-auto">
+            </div>
+            <div  className="lg:ml-auto">
               <div>
                 <p   className="text-[14px] font-medium text-[#5E5E5E] leading-[120%]  ">
                   Join our newsletter
@@ -43,13 +40,10 @@ const Footer = () => {
                   By clicking, you’re agreeing to our Terms.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
           <hr className="text-[#ABABAB] pb-3" />
-          <motion.div  transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
-            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }} className="flex pb-10 flex-row gap-2">
+          <div   className="flex pb-5 flex-row gap-2">
             <div>
               <p className="text-[12px] text-[#7C7C7C] font-medium leading-[150%] ">
                 © 2025 Bizzie
@@ -83,9 +77,9 @@ const Footer = () => {
             Privacy
             </Link>
           </div>
-          </motion.div>
+          </div>
           
-        </div>
+        </motion.div>
       </Container>
     </div>
   );

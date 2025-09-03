@@ -7,7 +7,7 @@ import { motion } from "motion/react"
 const Contact = () => {
   return (
     <div>
-      <div className="flex flex-col rounded-[20px] w-fit mx-auto bg-[#25D363] mt-30 justify-center  md:p-25 p-10 align-center  contact-bg ">
+      <div className="flex flex-col !overflow-y-hidden rounded-[20px] w-fit mx-auto bg-[#25D363] mt-30 justify-center  md:p-25 p-10 align-center  contact-bg ">
         <div>
           <motion.p
            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
@@ -31,13 +31,13 @@ const Contact = () => {
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }} >
-            <NavButton link={'#'} text={"Start on Whatsapp"} />
+            <NavButton link={'https://wa.me/12193552916'} target={"_blank"} text={"Start on Whatsapp"} />
           </motion.div>
           <motion.div  transition={{ duration: 0.5, delay: 0.6, ease: "easeInOut" }}
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }} >
-            <BlackButton link={'https://wa.me/12193552916'} target={"_blank"}text={"Explore on web"} />
+            <BlackButton link={'#'} text={"Explore on web"} />
           </motion.div>
         </div>
       </div>
