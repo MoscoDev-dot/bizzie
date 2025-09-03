@@ -15,7 +15,7 @@ export const metadata = {
   title: "Bizzie",
   description: "Bizzie Web App",
    icons: {
-    icon: "/IMG_1245.png"
+    icon: "/botmon banner white 2.png"
    }
 };
 
