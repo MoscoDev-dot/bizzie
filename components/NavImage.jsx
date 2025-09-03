@@ -1,13 +1,22 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const NavImage = () => {
   return (
-    <div >
-     <Link href='#'> <Image src='/IMG_1245.png' alt='bizzie' width={150} height={100} className='auto ' />
-</Link>    </div>
-  )
-}
+    <div>
+      <Link href="#">
+        
+        <Image
+          src="/public/IMG_1245.png"
+          alt="bizzie"
+          width={150}
+          height={100}
+          className="auto "
+        />
+      </Link>
+    </div>
+  );
+};
 
-export default NavImage
+export default NavImage;
