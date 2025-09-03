@@ -8,7 +8,7 @@ const NavImage = () => {
       <Link href="#">
         
         <Image
-          src="/public/IMG_1245.png"
+          src="/List.png"
           alt="bizzie"
           width={150}
           height={100}
