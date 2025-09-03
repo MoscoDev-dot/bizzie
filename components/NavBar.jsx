@@ -84,8 +84,8 @@ const NavBar = () => {
               </ul>
             </div>
             <div className="flex flex-row  gap-4 mt-4">
-               <BlackButton text={' Start on whatsapp'} />
-              <NavButton text={'Login'} />
+               <BlackButton link={'https://wa.me/12193552916'} target={"_blank"} text={' Start on whatsapp'} />
+            <NavButton link={'#'} text={'Login'} />
              
             </div>
           </div>
