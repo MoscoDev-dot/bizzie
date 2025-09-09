@@ -9,7 +9,7 @@ const NuraCoreCard2 = ({ text1, text2 }) => {
     <motion.div
       whileInView={{ y: ["0%", "-10%"] }} // scroll up then down
       transition={{
-        duration: 5, // speed
+        duration: 3, // speed
         ease: "easeInOut",
       }}
       className="md:pt-5"
