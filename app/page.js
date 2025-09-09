@@ -16,8 +16,8 @@ export default function Home() {
       <NuraCore />
       <Faq />
       <Footer />
-      <Pointer />
-      <Pointer />
+     <div className="hidden md:block"> <Pointer /></div>
+     
     </div>
   );
 }
