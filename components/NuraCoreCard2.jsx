@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 const NuraCoreCard2 = ({ text1, text2 }) => {
   return (
     <motion.div
+    viewport={{ once: true }}
       whileInView={{ y: ["0%", "-10%"] }} // scroll up then down
       transition={{
         duration: 3, // speed
