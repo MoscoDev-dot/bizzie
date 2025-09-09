@@ -1,26 +1,25 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-
-
-const NuraCoreCard2 = ({text1, text2}) => {
+const NuraCoreCard2 = ({ text1, text2 }) => {
   return (
-    <motion.div   animate={{ y: ["0%", "-55%"] }} // scroll up then down
-        transition={{
-          duration: 8, // speed
-          ease: "easeInOut",
-          repeat: Infinity,      // loop forever
-          repeatType: "reverse", // reverse direction each loop
-        }}  className="md:pt-5">
+    <motion.div
+      whileInView={{ y: ["0%", "-10%"] }} // scroll up then down
+      transition={{
+        duration: 5, // speed
+        ease: "easeInOut",
+      }}
+      className="md:pt-5"
+    >
       <div className="mx-5">
         <p className="font-bold text-[#25D363] pt-10 md:text-[24px] text-[15px] leading-[120%] ">
-           {text1}
+          {text1}
         </p>
         <p className="text-[#000000] py-4 md:text-[16px] text-[12px] font-medium leading-[150%] ">
-           {text2}
+          {text2}
         </p>
       </div>
 
@@ -42,7 +41,6 @@ const NuraCoreCard2 = ({text1, text2}) => {
             Learn more
           </p>
         </Link>
-        
       </div>
       <div className="mb-5">
         <div className="flex justify-end me-5 mt-3">
@@ -63,7 +61,7 @@ const NuraCoreCard2 = ({text1, text2}) => {
             className="w-auto h-auto "
           />
         </div>
-         <div className="flex justify-start ms-2 mt-1">
+        <div className="flex justify-start ms-2 mt-1">
           <Image
             src="/Avatar + Bubble (1).png"
             alt="hello png"
@@ -72,7 +70,7 @@ const NuraCoreCard2 = ({text1, text2}) => {
             className="w-auto h-auto "
           />
         </div>
-         <div className="flex justify-end me-5 mt-3">
+        <div className="flex justify-end me-5 mt-3">
           <Image
             src="/Bubble (1).png"
             alt="hello png"
@@ -90,8 +88,6 @@ const NuraCoreCard2 = ({text1, text2}) => {
             className="w-auto h-auto "
           />
         </div>
-        
-
       </div>
     </motion.div>
   );

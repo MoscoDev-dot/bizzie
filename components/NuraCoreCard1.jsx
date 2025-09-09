@@ -7,13 +7,11 @@ import { motion } from "motion/react";
 const NuraCoreCard1 = ({ text1, text2 }) => {
   return (
     <motion.div
-      animate={{ y: ["0%", "-55%"] }} // scroll up then down
-        transition={{
-          duration: 6, // speed
-          ease: "easeInOut",
-          repeat: Infinity,      // loop forever
-          repeatType: "reverse", // reverse direction each loop
-        }}
+      whileInView={{ y: ["0%", "-10%"] }} // scroll up then down
+      transition={{
+        duration: 3, // speed
+        ease: "easeInOut",
+      }}
       className="md:pt-10"
     >
       <div className="text-[#0A0A0A] mx-auto mb-5 font-semibold text-[12px] mt-5 w-fit px-5 py-1 rounded-lg text-center bg-[#FFFFFF] leading-[100%] ">
