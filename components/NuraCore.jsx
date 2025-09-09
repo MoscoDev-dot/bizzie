@@ -19,63 +19,79 @@ const NuraCore = () => {
           >
             Bizzie Core Features
           </motion.div>
-          <motion.div
-            transition={{ duration: 0.5, delay: 0.8, ease: "easeInOut" }}
+          <div
+            
+            className="grid lg:grid-cols-3 Core1 md:grid-cols-2 grid-cols-1 lg:mx-20 lg:gap-0 gap-8 lg:gap-4"
+          >
+            <motion.div transition={{ duration: 0.5, delay: 0.6, ease: "easeInOut" }}
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 lg:mx-20 lg:gap-0 gap-4"
-          >
-            <div className="lg:col-span-2  lg:mx-10 rounded-[20px] bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
+            viewport={{ once: true }} className="lg:col-span-2 h-[70vh] Core1 lg:mx-10 rounded-[20px] bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
               <NuraCoreCard1
                 text1={" Ready Made Business Docs, Done for You"}
                 text2={
                   "Skip the stress of starting from scratch. Access 1,000+ professional  templates from business plans and contracts to HR policies, ready to customize and use instantly."
                 }
               />
-            </div>
+               
+            </motion.div>
 
-            <div className="rounded-[20px]  bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
+            <motion.div transition={{ duration: 0.5, delay: 0.6, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }} className="rounded-[20px] Core1 h-[70vh]  bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
               <NuraCoreCard2
                 text1={"Instant Business Answers, 24/7"}
                 text2={
                   "Got a question? Ask Nura’s AI-powered assistant and get accurate, actionable answers in seconds right on WhatsApp."
                 }
               />
-            </div>
-            <div className="rounded-[20px] lg:mt-10 lg:ms-10 bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
+            </motion.div>
+            <motion.div transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }} className="rounded-[20px] Core1 h-[70vh] lg:mt-10 lg:ms-10 bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
               <NuraCoreCard1
                 text1={" Expert Help, On Demand"}
                 text2={
                   "Need a website? Legal advice? HR setup? Hire vetted experts for branding, legal, HR, IT, and more all in one place."
                 }
               />
-            </div>
-            <div className="lg:col-span-2 lg:mt-10  lg:ms-10 rounded-[20px]  bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
+            </motion.div>
+            <motion.div transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }} className="lg:col-span-2 Core1 h-[70vh]  lg:mt-10  lg:ms-10 rounded-[20px]  bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
               <NuraCoreCard2
                 text1={"Opportunities That Find You"}
                 text2={
                   "Never miss your next big break. Get curated grants, events, and funding alerts tailored for Nigerian businesses delivered where you work."
                 }
               />
-            </div>
-            <div className="lg:col-span-2 lg:mt-10 lg:mx-10 rounded-[20px]  bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
+            </motion.div>
+            <motion.div transition={{ duration: 0.5, delay: 0.8, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }} className="lg:col-span-2 Core1 h-[70vh]  lg:mt-10 lg:mx-10 rounded-[20px]  bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
               <NuraCoreCard1
                 text1={" Businesses at Your Fingertips"}
                 text2={
                   "Find and connect with nearby, verified businesses using our Google My Business integration. Disclaimer: Nura lists only. Verify before engaging."
                 }
               />
-            </div>
-            <div className="rounded-[20px] lg:mt-10 bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
+            </motion.div>
+            <motion.div transition={{ duration: 0.5, delay: 0.8, ease: "easeInOut" }}
+            initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }} className="rounded-[20px] Core1 h-[70vh]  lg:mt-10 bg-gradient-to-b from-[#130C3E1C] to-[#FFFFFF]">
               <NuraCoreCard2
                 text1={"Careers That Fit Your Ambition"}
                 text2={
                   "Discover jobs, gigs, and growth opportunities matched to your skills whether you’re starting out or scaling up."
                 }
               />
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </Container>
     </div>

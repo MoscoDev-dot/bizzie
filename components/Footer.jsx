@@ -14,13 +14,13 @@ import { motion } from "motion/react"
 
 const Footer = () => {
   return (
-    <div className="bg-white  lg:px-5">
+    <div className="bg-white Core1  lg:px-5">
       <Container maxWidth={false}>
         <motion.div  transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
             initial={{ y: 20, opacity: 0 }} // ANNIMATIONS
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>
-          <div className="grid md:grid-cols-2 pb-5 pt-10 grid-cols-1 lg:gap-5 md:gap-0 gap-15 ">
+          <div className="grid md:grid-cols-2 Core1 pb-5 pt-10 grid-cols-1 lg:gap-5 md:gap-0 gap-15 ">
             <div   >
               <NavImage />
             </div>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           <hr className="text-[#ABABAB] pb-3" />
-          <div   className="flex pb-5 flex-row gap-2">
+          <div   className="flex pb-5 Core1 flex-row gap-2">
             <div>
               <p className="text-[12px] text-[#7C7C7C] font-medium leading-[150%] ">
                 © 2025 Bizzie
@@ -63,7 +63,7 @@ const Footer = () => {
             Terms
             </Link>
           </div>
-          <div>
+          <div className="Core1">
               <Image
                 src="/Ellipse 1.png"
                 alt=""

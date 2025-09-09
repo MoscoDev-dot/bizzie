@@ -5,7 +5,7 @@ import React from 'react'
 const NavImage = () => {
   return (
     <div >
-     <Link href='#'> <Image src='/botmon banner white 2.png' alt='bizzie' width={150} height={100} className='auto ' />
+     <Link href='#'> <Image src='/botmon banner white 2.png' alt='bizzie' width={150} height={100} className=' cursor-none ' />
 </Link>    </div>
   )
 }
